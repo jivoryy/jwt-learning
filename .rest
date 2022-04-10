@@ -1,0 +1,23 @@
+GET http://localhost:8000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiR2FkaW5nIiwiaWF0IjoxNjQ5NTYwNDM2LCJleHAiOjE2NDk1NjA0NTF9.U8ruY_CV388QPyTWhWu8fmTPffeTesPMR2WinnK9oPg
+###
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiR2FkaW5nIiwiaWF0IjoxNjQ5NTYwNDM2fQ.cgRiHGxbfpuXrfphjifjafghZ0HM2kZ8DY4Mth-dUfA"
+}
+###
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiR2FkaW5nIiwiaWF0IjoxNjQ5NTYwNDM2fQ.cgRiHGxbfpuXrfphjifjafghZ0HM2kZ8DY4Mth-dUfA"
+}
+###
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "username": "Gading"
+}

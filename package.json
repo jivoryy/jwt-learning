@@ -1,0 +1,25 @@
+{
+  "name": "jwt-learning",
+  "version": "1.0.0",
+  "description": "Learning JWT Auth with refresh token for more secure connection",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js",
+    "devAuth": "nodemon authServer.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jivoryy/jwt-learning.git"
+  },
+  "author": "jivoryy",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
